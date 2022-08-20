@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgb(14, 24, 20), rgb(146, 44, 31));
+}
+
+.imagem{
+    width: 30%;
+    height: 60%;
+    background: url('img/god1.jpg');
+    background-size: cover;
+    animation: imagem 3.5s infinite steps(1);
+    border-radius: 5px;
+    
+}
+
+@keyframes imagem{
+    0%, 100%{
+        background: url('img/god1.jpg');
+        background-size: cover;
+
+    }
+    92.5%{
+        background: url('img/god2.png');
+        background-size: cover;
+        opacity: 1;
+
+    }
+    95%{
+        background: url('img/god3.png');
+        background-size: cover;
+        opacity: 0;
+
+    }
+    97.5%{
+        background: url('img/god4.png');
+        background-size: cover;
+        opacity: 1;
+
+    }
+  
+}
